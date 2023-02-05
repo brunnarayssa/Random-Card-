@@ -1,7 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background-color: rgb(107, 175, 107);
+  background-color: green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,21 +30,18 @@ body {
 
 .num {
   margin: auto;
-  font-size: 80px;
+  font-size: 85px;
   font-weight: bold;
 }
 
 .col-red {
-  color: red;
+  color: rgb(204, 14, 14);
 }
 
 .btn {
-  text-align: center;
-  margin-top: 20px;
-  background-color: white;
-}
+  text-align: left;
+  color: blue;
 
-.inputs {
-  display: inline;
-  margin-top: 10px;
+  margin-top: 20px;
+  background-color: rgb(248, 250, 248);
 }

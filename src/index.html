@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generador de cartas aleatorias</title>
+    <title>Random Card Dealer</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -12,14 +12,52 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-
   <body>
     <div class="card" style="height: 300px; width: 200px;">
-      <div class="pinta">col</div>
-      <div class="num">1</div>
-      <div class="pinta inv">color</div>
+      <div class="pinta">dc</div>
+      <div class="num">6</div>
+      <div class="pinta inv">cd</div>
     </div>
-
-    <div class="inputs"><button class="btn">cambia.</button></div>
+    <button class="btn">cambia!</button>
+    <style>
+      .inputs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .sizes {
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        margin-right: 10px;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    </style>
+    
+    <div class="inputs">
+      <input
+        class="sizes"
+        type="number"
+        id="inputheigth"
+        value="height"
+        placeholder="Altura"
+        min="300"
+      />
+    
+      <input
+        class="sizes"
+        type="number"
+        id="inputwidth"
+        value="width"
+        placeholder="Ancho"
+        min="200"
+      />
+    </div>
+    
+    </div>
+    
+    </div>
   </body>
 </html>

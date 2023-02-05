@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 import { main } from "@popperjs/core";
 
 window.onload = function() {
-  const number = [
+  const numList = [
     "1",
     "2",
     "3",
@@ -42,16 +42,27 @@ window.onload = function() {
     bottomPinta.innerHTML = randomPinta;
     console.log(randomPinta);
 
-    if (
-      (randomPinta === "♦", "♥", "♠", "♣" || randomPinta === "♦", "♥", "♠", "♣")
-    ) {
+    if (randomPinta === "♥" || randomPinta === "♦") {
       topPinta.classList.add("col-red");
-      console.log("cambio de color");
+      console.log("cambio de cor");
+
       number.classList.add("col-red");
-      console.log("cambio de color");
+      console.log("cambio de cor");
 
       bottomPinta.classList.add("col-red");
-      console.log("cambio de color");
+      console.log("cambio de cor");
+    }
+
+    number.innerHTML = numList[Math.floor(Math.random() * numList.length)];
+
+    const inw = document.querySelector("#inputwidth");
+    const inh = document.querySelector("#inputheigth");
+    const divcard = document.querySelector(".card");
+
+    console.log(inw.value);
+    console.log(inh.value);
+    if (inw !== "") {
+      divcard.style = `height: ${inh.value}px; width: ${inw.value}px;`;
     }
 
     console.log("renderizado");
